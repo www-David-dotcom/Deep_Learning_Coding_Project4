@@ -79,7 +79,12 @@ def convert_icon_qa_test_to_conversation(
         messages=[
             {
                 "role": "system",
-                "content": SYSTEM_PROMPT,
+                "content": [
+                    {
+                        "type": "text",
+                        "text": SYSTEM_PROMPT,
+                    }
+                ],
             },
             {
                 "role": "user",

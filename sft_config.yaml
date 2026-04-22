@@ -3,7 +3,7 @@ output_dir: checkpoints/sft_run
 max_length: 1024
 num_train_epochs: 1.0
 
-per_device_train_batch_sizze: 2
+per_device_train_batch_size: 2
 gradient_accumulation_steps: 1
 
 learning_rate: 1.0e-4
@@ -13,7 +13,7 @@ weight_decay: 0.01
 optim: adamw_torch_fused
 max_grad_norm: 1.0
 
-fp16: true
+bf16: true
 gradient_checkpointing: true
 
 completion_only_loss: true # only the assistent output tokens should contribute to the training objective
@@ -22,7 +22,7 @@ remove_unused_columns: false # the trainer shouldn't automatically throw away co
 dataset_kwargs:
     skip_prepare_dataset: true # do not let SFTTrainer transform the dataset automatically with a different training format first
 
-eos_token: "<}im_end|>"
+eos_token: "<|im_end|>"
 
 logging_steps: 10
 save_strategy: "no"

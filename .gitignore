@@ -6,7 +6,10 @@ uv.lock
 __pycache__
 custom_data
 
-# zip files
+# zip files and other helper files
 zip_source.sh
 zip.sh
 *.zip
+download_uv.sh
+run.ipynb
+checkpoints
