@@ -47,8 +47,15 @@ def convert_custom_train_to_conversation(
     """
 
     # YOUR CODE BEGIN.
-
-    return convert_icon_qa_train_to_conversation(IconQASample(**sample))
+    formatted_sample = IconQASample(
+        question=sample["question"].strip(),
+        choices=sample.get("choices", "choice_0.png,choice_1.png"),
+        answer=sample["answer"],
+        query_image=sample["query_image"],
+        choice_image_0=sample["choice_image_0"],
+        choice_image_1=sample["choice_image_1"],
+    )
+    return convert_icon_qa_train_to_conversation(formatted_sample)
 
     # YOUR CODE END.
 
