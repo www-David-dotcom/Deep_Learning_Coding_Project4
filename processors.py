@@ -27,7 +27,7 @@ ANSWER_TO_OPTION = {"choice_0.png":"A", "choice_1.png": "B"}
 OPTION_TO_ANSWER = {v: k for k, v in ANSWER_TO_OPTION.items()} 
 SYSTEM_PROMPT = (
     "You are solving IconQA-style visual multiple-choise questions. "
-    "Ths user will provide 1 main diagram and 2 candidate answer images labeled A and B. "
+    "The user will provide 1 main diagram and 2 candidate answer images labeled A and B. "
     "Use the diagram and question to choose the better candidate. "
     "Please think silently and respond with only <answer>A</answer> or <answer>B</answer>"
 )
