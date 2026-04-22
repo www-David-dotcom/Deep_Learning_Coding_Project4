@@ -14,3 +14,4 @@ download_uv.sh
 run.ipynb
 checkpoints
 *.arrow
+report*
