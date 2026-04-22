@@ -5,3 +5,8 @@ data
 uv.lock
 __pycache__
 custom_data
+
+# zip files
+zip_source.sh
+zip.sh
+*.zip

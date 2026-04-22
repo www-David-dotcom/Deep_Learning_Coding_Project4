@@ -45,7 +45,7 @@ def write_arrow_dataset(ds: Dataset, output_path: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", default="data/icon-qa-train.arrow")
-    parser.add_argument("--output", default="custom_data/custom.arrow")
+    parser.add_argument("--output", default="custom_data/custom_flipped.arrow")
     args = parser.parse_args()
 
     input_path = resolve_path(args.input)
