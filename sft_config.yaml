@@ -13,6 +13,10 @@ weight_decay: 0.01
 optim: adamw_torch_fused
 max_grad_norm: 1.0
 
+
+seed: 3407
+data_seed: 3407
+
 bf16: true
 gradient_checkpointing: true
 
